@@ -1,0 +1,12 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    height: 40px;
+    text-align: center;
+}
+
+.rodape__desenvolvedor a{
+    cursor: pointer;
+    font-weight: 600;
+}

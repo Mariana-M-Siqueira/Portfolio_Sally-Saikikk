@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mariana Matias Siqueira">
+    <!-- !<meta name="description" content=""> -->
+
+    <title>Sally Saikikk - Portfólio</title>
+    
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <!-- CABEÇALHO: -->
+    <header class="cabecalho" id="topo">
+
+        <!-- NAVEGAÇÃO: -->
+        <button class="cabecalho__nav__btn" type="button" onclick="abrindoMenu()">
+            <img class="nav__btn-hamburgue" src="img/menu-fechado.svg" alt="Menu Fechado">
+        </button>
+
+        <nav class="cabecalho__nav">
+
+            <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()" tabindex="0">
+
+            <h3 class="cabecalho__nav__titulo">Menu:</h3>
+
+            <ul class="cabecalho__nav__lista">
+                <li class="nav__lista__itens nav-ativo">
+                    <a href="index.html">Galeria de Artes</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="sobre.html">Sobre Mim</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="contatos.html">Contatos</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="">Currículo</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="termos.html">Termos de Uso</a>
+                </li>
+            </ul>
+
+            <div class="cabecalho__nav__btn-login">
+                <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
+                <button class="cabecalho__nav__btn-sair">Sair</button>
+            </div>
+        </nav>
+
+        
+    </header>
+    <!-- FIM DO CABEÇALHO -->
+    
+    <!-- CONTEUDO PRINCIPAL: -->
+    <main class="principal" onclick="closedMenuMobile()">
+        <div class="principal__titulo">
+            <h1 class="principal__nome-artistico" tabindex="-1">Sally Saikikk</h1>
+            <h2 class="principal__nome-artista" tabindex="-1">Ilustrador Vinícius Ribeiro</h2>
+        </div>
+
+        <!-- BTN INSERIR -->
+        <button class="principal__btn-inserir">
+            <span>Inserir Imagens</span>
+        </button>
+
+        <!-- <dialog></dialog> -->
+
+        <!-- DROPDOWN CATEGORIAS -->
+        <div tabindex="0" class="principal__dropdown-titulo">
+            <span>Categorias</span>
+        </div>
+
+        <div class="principal__dropdown__container">
+            <ul class="principal__dropdown-lista">
+                <li tabindex="0">Sketch</li>
+                <li>Comic</li>
+                <li>Caracters</li>
+                <li>Monstros</li>
+                <li>Animais</li>
+                <li>Sem-Cor</li>
+                <li>Icons</li>
+                <li>Tradicional</li>
+            </ul>
+        </div>
+
+        <!-- GALERIA -->
+        <div class="principal__galeria">
+            <img src="img/arte1.jpg" alt="" tabindex="0">
+            <img src="img/arte2.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte3.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte4.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte7.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte6.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte8.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte5.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte9.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte11.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte15.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte16.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte17.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte10.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte12.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte13.jpg" alt="" loading="lazy" tabindex="0">
+            <img src="img/arte14.jpg" alt="" loading="lazy" tabindex="0">
+        </div>
+
+        <!-- img grande <dialog></dialog> -->
+
+        <!-- BTN VOLTAR AO TOPO: -->
+        <div data-scroll="suave" data-anima="scroll">
+            <a href="#topo">
+                <div tapindex="0" class="principal__btn-topo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#EF8F8F" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                      </svg>
+                </div>
+            </a>
+        </div>
+
+    </main>
+    <!-- FIM DO CONTEUDO PRINCIPAL -->
+
+    <!-- RODAPÉ: -->
+    <footer class="rodape">
+        <span class="rodape__desenvolvedor">&copy Desenvolvido por <a href="https://github.com/Mariana-M-Siqueira/" target="_blank">Mariana Matias Siqueira</a></span>
+    </footer>
+    <!-- FIM DO RODAPÉ -->
+
+    <!-- SCRIPTS: -->
+    <script type="text/javascript" src="script/menu-mobile.js"></script>
+    <script type="text/javascript" src="script/btn-inserir.js"></script>
+    <script type="text/javascript" src="script/btn-topo.js"></script>
+    <script type="text/javascript" src="script/img-expandir.js"></script>
+</body>
+
+</html>
