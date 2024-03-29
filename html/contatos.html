@@ -6,48 +6,49 @@
 
     <title>Contatos e Redes Sociais - Sally Saikikk</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css"> 
-    <link rel="stylesheet" href="style/contatos.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 <body>
 
     <!-- CABEÇALHO: -->
-    <header class="cabecalho">
-    
+    <header class="cabecalho" id="topo">
+
         <!-- NAVEGAÇÃO: -->
+        <button class="cabecalho__nav__btn" type="button" onclick="abrindoMenu()">
+            <img class="nav__btn-hamburgue" src="img/menu-fechado.svg" alt="Menu Fechado">
+        </button>
+
         <nav class="cabecalho__nav">
-            <button class="cabecalho__nav__btn" type="button">
-                <span class="nav__btn-hamburgue"></span>
-            </button>
+
+            <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()" tabindex="0">
+
+            <h3 class="cabecalho__nav__titulo">Menu:</h3>
 
             <ul class="cabecalho__nav__lista">
                 <li class="nav__lista__itens">
-                    <a href="">Galeria de Artes</a>
+                    <a href="../index.html">Galeria de Artes</a>
                 </li>
                 <li class="nav__lista__itens">
-                    <a href="">Sobre Mim</a>
+                    <a href="sobre.html">Sobre Mim</a>
                 </li>
-                <li class="nav__lista__itens">
-                    <a href="">Contatos</a>
+                <li class="nav__lista__itens nav-ativo">
+                    <a href="contatos.html">Contatos</a>
                 </li>
                 <li class="nav__lista__itens">
                     <a href="">Currículo</a>
                 </li>
                 <li class="nav__lista__itens">
-                    <a href="">Termos de Uso</a>
-                </li>
-                <li class="lista__item-sair nav__lista__itens">
-                    <a href="">Sair</a>
-                </li>
-                <li class="lista__item-area_art nav__lista__itens">
-                    <a href="">Área do Artista</a>
+                    <a href="termos.html">Termos de Uso</a>
                 </li>
             </ul>
+
+            <div class="cabecalho__nav__btn-login">
+                <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
+                <button class="cabecalho__nav__btn-sair">Sair</button>
+            </div>
         </nav>
 
-        <h1 class="cabecalho__nome-artistico">Sally Saikikk</h1>
-        <h2 class="cabecalho__nome-artista">Ilustrador Vinícius Ribeiro</h2>
-
+        
     </header>
     <!-- FIM DO CABEÇALHO -->
 

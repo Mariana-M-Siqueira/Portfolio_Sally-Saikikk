@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Artista - Sally Saikikk</title>
+
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO: -->
+    <header class="cabecalho" id="topo">
+
+        <!-- NAVEGAÇÃO: -->
+        <button class="cabecalho__nav__btn" type="button" onclick="abrindoMenu()">
+            <img class="nav__btn-hamburgue" src="img/menu-fechado.svg" alt="Menu Fechado">
+        </button>
+
+        <nav class="cabecalho__nav">
+
+            <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()"
+                tabindex="0">
+
+            <h3 class="cabecalho__nav__titulo">Menu:</h3>
+
+            <ul class="cabecalho__nav__lista">
+                <li class="nav__lista__itens">
+                    <a href="../index.html">Galeria de Artes</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="sobre.html">Sobre Mim</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="contatos.html">Contatos</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="">Currículo</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="termos.html">Termos de Uso</a>
+                </li>
+            </ul>
+
+            <div class="cabecalho__nav__btn-login">
+                <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
+                <button class="cabecalho__nav__btn-sair">Sair</button>
+            </div>
+        </nav>
+
+
+    </header>
+    <!-- FIM DO CABEÇALHO -->
+
+    <!-- CONTEUDO PRINCIPAL: -->
+    <main class="principal">
+
+        <h1 class="principal__login-titulo">Bem - Vindo<br><span>Vinícius &#x1F44B</span></h1>
+
+        <label for="login-email" class="login-subtitulo">E-mail:</label>
+        <input type="text" id="login-email" class="login-input">
+
+        <label for="login-senha" class="login-subtitulo">Senha:</label>
+        <input type="text" id="login-senha" class="login-input">
+
+        <input type="submit" value="Entrar">
+
+    </main>
+
+    <script type="text/javascript" src="script/menu-mobile.js"></script>
+    <script type="text/javascript" src="script/login.js"></script>
+</body>
+
+</html>

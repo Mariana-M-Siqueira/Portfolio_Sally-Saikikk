@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login Artista - Sally Saikikk</title>
+    <title>Termos de Serviço - Sally Saikikk</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 <body>
     
@@ -25,8 +25,8 @@
                 <h3 class="cabecalho__nav__titulo">Menu:</h3>
     
                 <ul class="cabecalho__nav__lista">
-                    <li class="nav__lista__itens nav-ativo">
-                        <a href="index.html">Galeria de Artes</a>
+                    <li class="nav__lista__itens">
+                        <a href="../index.html">Galeria de Artes</a>
                     </li>
                     <li class="nav__lista__itens">
                         <a href="sobre.html">Sobre Mim</a>
@@ -37,13 +37,13 @@
                     <li class="nav__lista__itens">
                         <a href="">Currículo</a>
                     </li>
-                    <li class="nav__lista__itens">
+                    <li class="nav__lista__itens nav-ativo">
                         <a href="termos.html">Termos de Uso</a>
                     </li>
                 </ul>
     
                 <div class="cabecalho__nav__btn-login">
-                    <button class="cabecalho__nav__btn-entrar">Área do Artista</button>
+                    <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
                     <button class="cabecalho__nav__btn-sair">Sair</button>
                 </div>
             </nav>
@@ -53,21 +53,14 @@
         <!-- FIM DO CABEÇALHO -->
 
     <!-- CONTEUDO PRINCIPAL: -->
-    <main class="principal">
+    <main class="principal__termos">
 
-        <h1 class="principal__login-titulo">Bem - Vindo<br><span>Vinícius &#x1F44B</span></h1>
+        <h1 class="principal__termos__titulo">Termos de Serviço</h1>
 
-        <label for="login-email" class="login-subtitulo">E-mail:</label>
-        <input type="text" id="login-email" class="login-input">
-        
-        <label for="login-senha" class="login-subtitulo">Senha:</label>
-        <input type="text" id="login-senha" class="login-input">
-
-        <input type="submit" value="Entrar">
+        <section class="principal__termos-texto">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more.</p>
+        </section>
 
     </main>
-    
-    <script type="text/javascript" src="script/menu-mobile.js"></script>
-    <script type="text/javascript" src="script/login.js"></script>
 </body>
 </html>
