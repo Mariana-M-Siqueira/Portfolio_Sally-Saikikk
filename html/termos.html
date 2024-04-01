@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,51 @@
 
     <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
-<body>
-    
-        <!-- CABEÇALHO: -->
-        <header class="cabecalho" id="topo">
 
-            <!-- NAVEGAÇÃO: -->
-            <button class="cabecalho__nav__btn" type="button" onclick="abrindoMenu()">
-                <img class="nav__btn-hamburgue" src="img/menu-fechado.svg" alt="Menu Fechado">
-            </button>
-    
-            <nav class="cabecalho__nav">
-    
-                <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()" tabindex="0">
-    
-                <h3 class="cabecalho__nav__titulo">Menu:</h3>
-    
-                <ul class="cabecalho__nav__lista">
-                    <li class="nav__lista__itens">
-                        <a href="../index.html">Galeria de Artes</a>
-                    </li>
-                    <li class="nav__lista__itens">
-                        <a href="sobre.html">Sobre Mim</a>
-                    </li>
-                    <li class="nav__lista__itens">
-                        <a href="contatos.html">Contatos</a>
-                    </li>
-                    <li class="nav__lista__itens">
-                        <a href="">Currículo</a>
-                    </li>
-                    <li class="nav__lista__itens nav-ativo">
-                        <a href="termos.html">Termos de Uso</a>
-                    </li>
-                </ul>
-    
-                <div class="cabecalho__nav__btn-login">
-                    <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
-                    <button class="cabecalho__nav__btn-sair">Sair</button>
-                </div>
-            </nav>
-    
-            
-        </header>
-        <!-- FIM DO CABEÇALHO -->
+<body>
+
+    <!-- CABEÇALHO: -->
+    <header class="cabecalho" id="topo">
+
+        <!-- NAVEGAÇÃO: -->
+        <button class="cabecalho__nav__btn" type="button" onclick="abrindoMenu()">
+            <img class="nav__btn-hamburgue" src="../img/menu-fechado.svg" alt="Menu Fechado">
+        </button>
+
+        <nav class="cabecalho__nav">
+
+            <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()"
+                tabindex="0">
+
+            <h3 class="cabecalho__nav__titulo">Menu:</h3>
+
+            <ul class="cabecalho__nav__lista">
+                <li class="nav__lista__itens">
+                    <a href="../index.html">Galeria de Artes</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="sobre.html">Sobre Mim</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="contatos.html">Contatos</a>
+                </li>
+                <li class="nav__lista__itens">
+                    <a href="">Currículo</a>
+                </li>
+                <li class="nav__lista__itens nav-ativo">
+                    <a href="termos.html">Termos de Uso</a>
+                </li>
+            </ul>
+
+            <div class="cabecalho__nav__btn-login">
+                <button class="cabecalho__nav__btn-entrar"><a href="login.html">Área do Artista</a></button>
+                <button class="cabecalho__nav__btn-sair">Sair</button>
+            </div>
+        </nav>
+
+
+    </header>
+    <!-- FIM DO CABEÇALHO -->
 
     <!-- CONTEUDO PRINCIPAL: -->
     <main class="principal__termos">
@@ -58,9 +61,59 @@
         <h1 class="principal__termos__titulo">Termos de Serviço</h1>
 
         <section class="principal__termos-texto">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more.</p>
         </section>
 
     </main>
+
+    <!-- RODAPÉ: -->
+    <footer class="rodape">
+        <div class="rodape__contatos">
+            <div class="rodape__contatos-email">
+                <h3>Ficou Interessado no meu Trabalho?</h3>
+                <p>então entre em contato via <strong>e-amail</strong>:</p>
+                <button>Contato E-mail</button>
+            </div>
+
+            <div>
+                <p><strong>ou</strong></p>
+            </div>
+
+            <div class="rodape__contatos-redes">
+                <p>Fale comigo por alguma <strong>rede-social</strong>:</p>
+
+                <div class="contatos-redes-img">
+                    <a href=""><img src="../img/instagram.svg" alt="instagram do artista"></a>
+                    <a href=""><img src="../img/twitter.svg" alt="twitter do artista"></a>
+                    <a href=""><img src="../img/behance.svg" alt="behance do artista"></a>
+                    <a href=""><img src="../img/artstations.svg" alt="artstation do artista"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape__mapa-site">
+            <h3>Mapa do Site:</h3>
+            <ul>
+                <li><a href="../index.html">Galeria de Artes</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="termos.html">Termos de Serviço</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="rodape__creditos">
+            <span class="rodape__desenvolvedor">&copy Desenvolvido por <a href="https://github.com/Mariana-M-Siqueira/"
+                    target="_blank">Mariana Matias Siqueira</a></span>
+        </div>
+
+    </footer>
+    <!-- FIM DO RODAPÉ -->
 </body>
+
 </html>

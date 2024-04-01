@@ -1,4 +1,3 @@
-/* MOBILE: */
 .cabecalho {
     display: flex;
     flex-direction: column;
@@ -150,7 +149,7 @@
     height: 40px;
 }
 
-/* TABLET e DESKTOP: */
+/* NEDIA: */
 @media only screen and (min-width: 1200px) {
 
     .cabecalho__nav__btn,
