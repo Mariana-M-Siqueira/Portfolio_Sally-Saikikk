@@ -20,7 +20,7 @@
 }
 
 .cabecalho__nav__btn:focus,
-.cabecalho__nav__btn {
+.cabecalho__nav__btn:hover {
     background-color: var(--rosa-queimado-claro);
     border-radius: 16px;
 }
