@@ -7,6 +7,7 @@
 }
 
 .cabecalho__nav__btn {
+    cursor: pointer;
     align-self: flex-end;
     margin: 1.5em 0 1.5em 0;
     transition: 500ms;
