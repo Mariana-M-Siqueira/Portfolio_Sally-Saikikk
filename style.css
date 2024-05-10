@@ -8,6 +8,7 @@
 @import url(style/sobre.css);
 @import url(style/termos.css);
 @import url(style/rodape.css);
+@import url(style/modais_index.css);
 
 :root{ 
     --cor-background: #B10035;

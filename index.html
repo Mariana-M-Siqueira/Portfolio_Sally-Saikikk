@@ -74,43 +74,85 @@
         <!-- DROPDOWN CATEGORIAS -->
         <div tabindex="0" class="principal__dropdown-titulo">
             <span>Categorias</span>
+            <ul class="principal__dropdown-titulo-lista">
+                <li tabindex="0" class="">Todos</li>
+                <li tabindex="0" class="">Sketch</li>
+                <li tabindex="0" class="">Cartoon</li>
+                <li tabindex="0" class="">Character</li>
+                <li tabindex="0" class="">Monstros</li>
+                <li tabindex="0" class="">Animais</li>
+                <li tabindex="0" class="">Icons</li>
+                <li tabindex="0" class="">Sem-Cor</li>
+                <li tabindex="0" class="">Tradicional</li>
+            </ul>
         </div>
 
         <div class="principal__dropdown__container">
             <ul class="principal__dropdown-lista">
-                <li tabindex="0">Sketch</li>
-                <li>Comic</li>
-                <li>Caracters</li>
-                <li>Monstros</li>
-                <li>Animais</li>
-                <li>Sem-Cor</li>
-                <li>Icons</li>
-                <li>Tradicional</li>
+                <li tabindex="0" class="">Todos</li>
+                <li tabindex="0" class="">Sketch</li>
+                <li tabindex="0" class="">Cartoon</li>
+                <li tabindex="0" class="">Character</li>
+                <li tabindex="0" class="">Monstros/Criaturas</li>
+                <li tabindex="0" class="">Animais</li>
+                <li tabindex="0" class="">Icons</li>
+                <li tabindex="0" class="">Sem-Cor</li>
+                <li tabindex="0" class="">Tradicional</li>
             </ul>
         </div>
 
         <!-- GALERIA -->
         <div class="principal__galeria">
-            <img src="img/arte1.jpg" alt="" tabindex="0">
-            <img src="img/arte2.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte3.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte4.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte7.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte6.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte8.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte5.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte9.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte11.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte15.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte16.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte17.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte10.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte12.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte13.jpg" alt="" loading="lazy" tabindex="0">
-            <img src="img/arte14.jpg" alt="" loading="lazy" tabindex="0">
+
+            <img src="img/arte1.jpg" title="Demônia" alt="" tabindex="0" class="todos monstrosCriaturas">
+            <img src="img/arte2.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character sketch">
+            <img src="img/arte3.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos monstrosCriaturas">
+            <img src="img/arte4.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character">
+            <img src="img/arte7.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos monstrosCriaturas">
+            <img src="img/arte6.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos monstrosCriaturas">
+            <img src="img/arte8.jpg" title="Kenai - Personagem de RPG" alt="" loading="lazy" tabindex="0" class="todos character">
+            <img src="img/arte5.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character">
+            <img src="img/arte9.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional monstrosCriaturas">
+            <img src="img/arte11.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional">
+            <img src="img/arte15.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character icons">
+            <img src="img/arte16.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character icons">
+            <img src="img/arte17.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos character icons">
+            <img src="img/arte10.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional animais">
+            <img src="img/arte12.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional monstrosCriaturas">
+            <img src="img/arte13.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional ">
+            <img src="img/arte14.jpg" title="" alt="" loading="lazy" tabindex="0" class="todos tradicional monstrosCriaturas">
         </div>
 
-        <!-- img grande <dialog></dialog> -->
+        <!-- EXIBINDO CADA IMAGEM -->
+        <dialog class="principal__modal__exibindo close">
+
+            <button class="modal__exibindo-fechar"><img src="img/fechar-modal.svg" alt=""></button>
+            <img src="" alt="" class="modal__exibindo-img">
+
+            <div class="modal__exibindo-informacoes">
+                <div class="modal__exibindo-informacoes-item item-titulo">
+                    <h3>Título:</h3>
+                    <p></p>
+                </div>
+
+                <div class="modal__exibindo-informacoes-item item-categoria">
+
+                    <h3>Categorias:</h3>
+
+                    <div class="categorias-obra">
+                        <!-- deixar o container "categorias-obra" e colocar o restante por JS -->
+                        <div class="categoria">
+                            <p>
+                                <button>
+                                    <img src="img/delete.svg" alt="botão de deletar categoria">
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </dialog>
 
         <!-- BTN VOLTAR AO TOPO: -->
         <div data-scroll="suave" data-anima="scroll">
@@ -156,7 +198,7 @@
         <div class="rodape__mapa-site">
             <h3>Mapa do Site:</h3>
             <ul>
-                <li><a href="index.html">Galeria de Artes</a></li>   
+                <li><a href="index.html">Galeria de Artes</a></li>
                 <li><a href="html/sobre.html">Sobre Mim</a></li>
                 <li><a href="html/contatos.html">Contatos</a></li>
                 <li><a href="html/termos.html">Termos de Serviço</a></li>
@@ -165,7 +207,8 @@
         </div>
 
         <div class="rodape__creditos">
-            <span class="rodape__desenvolvedor">&copy Desenvolvido por <a href="https://github.com/Mariana-M-Siqueira/" target="_blank">Mariana Matias Siqueira</a></span>
+            <span class="rodape__desenvolvedor">&copy Desenvolvido por <a href="https://github.com/Mariana-M-Siqueira/"
+                    target="_blank">Mariana Matias Siqueira</a></span>
         </div>
 
     </footer>
@@ -174,8 +217,11 @@
     <!-- SCRIPTS: -->
     <script type="text/javascript" src="script/menu-mobile.js"></script>
     <script type="text/javascript" src="script/btn-inserir.js"></script>
+    <script type="text/javascript" src="script/dropdown-mobile.js"></script>
     <script type="text/javascript" src="script/btn-topo.js"></script>
     <script type="text/javascript" src="script/img-expandir.js"></script>
+    <script type="text/javascript" src="script/modal__exibindo.js"></script>
+    <script type="text/javascript" src="script/modal_inserindo.js"></script>
 </body>
 
 </html>

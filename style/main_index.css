@@ -29,15 +29,25 @@
     margin-bottom: 16px;
     background: url(../img/mais.svg) no-repeat;
     background-position: 30%;
+    cursor: pointer;
+}
+
+.principal__btn-inserir span {
     padding-left: 45px;
 }
 
 .principal__dropdown-titulo {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-image: url(../img/dropdown-fechado.svg);
     background-position: 65%;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.principal__dropdown-titulo span {
     padding-right: 45px;
 }
 
@@ -55,9 +65,38 @@
     background-repeat: no-repeat;
 }
 
+.dropdown-titulo-active{
+    border-radius: 8px 8px 0 0;
+    background-color: var(--rosa-escuro2);
+    height: 50px;
+}
+
+.principal__dropdown-titulo-lista {
+    position: absolute;
+    list-style: disc inside;
+    background-color: var(--rosa-queimado);
+    top: 100%;
+    width: 100%;
+    padding: 8px 0 16px 16px;
+    border-radius: 0 0 8px 8px;
+    display: none;
+}
+
+.principal__dropdown-titulo-lista li {
+    border-bottom: 2px solid var(--rosa-queimado-claro);
+    width: 95%;
+    display: flex;
+    padding: 8px 0 8px 40px;
+    background: url(../img/Bolinha.svg) no-repeat 15px 15px;
+}
+
+.dropdown-titulo-lista-active{
+    display: block;
+}
+
+
 .principal__btn-inserir:hover,
 .principal__btn-inserir:focus,
-.principal__dropdown-titulo:focus,
 .principal__dropdown-titulo:hover {
     background-color: var(--rosa-escuro2);
     height: 50px;
@@ -80,6 +119,7 @@
     border-radius: 5px;
     margin-bottom: 16px;
     object-fit: contain;
+    cursor: pointer;
     transition: 500ms;
 }
 
@@ -108,7 +148,7 @@
 }
 
 /* MEDIA: */
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 700px) {
     .principal__titulo {
         margin: 50px 0;
     }
@@ -120,14 +160,18 @@
     .principal__dropdown-titulo {
         background-position: 58%;
     }
+
+    .principal__dropdown-titulo-lista {
+        columns: 2;
+    }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
     .principal__btn-inserir {
-        width: 7em;
+        width: 8%;
         height: 2.1em;
         background-position: 50%;
-        margin: 0;
+        margin: 0 0 0 16px;
         align-self: flex-end;
         position: relative;
         top: 35px;
@@ -165,6 +209,7 @@
     }
 
     .principal__dropdown-lista li {
+        cursor: pointer;
         background-color: var(--rosa-escuro);
         border-radius: 8px;
         height: 35px;
