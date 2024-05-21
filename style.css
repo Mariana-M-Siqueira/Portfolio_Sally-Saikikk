@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url(style/reset.css);
 @import url(style/contatos.css);
-@import url(style/hamburgue_menu.css);
 @import url(style/header_index.css);
 @import url(style/login.css);
 @import url(style/main_index.css);
@@ -39,6 +38,7 @@ body{
     width: 100%;
     background-color: var(--cor-background);
     font-family: var(--fonte);
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -50,4 +50,8 @@ body{
 ::-webkit-scrollbar-thumb {
     background-color: var(--rosa-escuro);
     border-radius: 8px;
+}
+
+.close {
+    display: none;
 }

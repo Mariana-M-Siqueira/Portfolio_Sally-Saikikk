@@ -124,10 +124,12 @@
         </div>
 
         <!-- EXIBINDO CADA IMAGEM -->
-        <dialog class="principal__modal__exibindo close">
+        <dialog class="principal__modal close">
 
-            <button class="modal__exibindo-fechar"><img src="img/fechar-modal.svg" alt=""></button>
-            <img src="" alt="" class="modal__exibindo-img">
+            <div class="modal__exibindo-container-img">
+                <button class="modal-fechar"><img src="img/fechar-modal.svg" alt=""></button>
+                <img src="" alt="" class="modal__exibindo-img">
+            </div>
 
             <div class="modal__exibindo-informacoes">
                 <div class="modal__exibindo-informacoes-item item-titulo">
@@ -140,7 +142,6 @@
                     <h3>Categorias:</h3>
 
                     <div class="categorias-obra">
-                        <!-- deixar o container "categorias-obra" e colocar o restante por JS -->
                         <div class="categoria">
                             <p>
                                 <button>
@@ -219,7 +220,6 @@
     <script type="text/javascript" src="script/btn-inserir.js"></script>
     <script type="text/javascript" src="script/dropdown-mobile.js"></script>
     <script type="text/javascript" src="script/btn-topo.js"></script>
-    <script type="text/javascript" src="script/img-expandir.js"></script>
     <script type="text/javascript" src="script/modal__exibindo.js"></script>
     <script type="text/javascript" src="script/modal_inserindo.js"></script>
 </body>

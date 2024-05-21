@@ -76,7 +76,7 @@
 }
 
 .cabecalho__nav__titulo {
-    font-size: 30px;
+    font-size: 28px;
     border-bottom: 3px var(--rosa-queimado-claro) solid;
     border-radius: 2px;
     padding-bottom: 5px;
@@ -85,7 +85,7 @@
 
 .nav__lista__itens {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
     transition: 500ms;
     display: flex;
@@ -143,6 +143,10 @@
     outline: none;
 }
 
+.cabecalho__nav__btn-sair {
+    display: none;
+}
+
 .cabecalho__nav__btn-entrar:hover,
 .cabecalho__nav__btn-sair:hover,
 .cabecalho__nav__btn-entrar:focus,
@@ -151,7 +155,7 @@
     height: 40px;
 }
 
-/* NEDIA: */
+/* MEDIA: */
 @media only screen and (min-width: 1200px) {
 
     .cabecalho__nav__btn,

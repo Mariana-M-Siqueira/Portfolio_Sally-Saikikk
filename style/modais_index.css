@@ -1,133 +1,89 @@
-.principal__modal__exibindo {
-    padding: 0;
-    width: 90%;
+dialog::backdrop {
+    background-color: rgb(0 0 0 / .3);
+}
+
+.principal__modal {
+    border: none;
     display: flex;
     flex-direction: column;
-    border: none;
-    border-radius: 8px;
+    overflow-x: hidden;
+    padding: 0;
     background-color: var(--rosa-queimado);
+    border-radius: 8px;
     outline: none;
 }
 
-.modal__exibindo-fechar {
+.modal-fechar {
     position: absolute;
-    right: 18px;
-    top: 18px;
+    right: 16px;
+    top: 16px;
 }
 
 .modal__exibindo-img {
-    border-radius: 8px;
     width: 100%;
-    margin-bottom: 16px;
+    height: 100%;
 }
 
-.modal__exibindo-informacoes{
-    padding: 0 24px 16px 24px;
+.modal__exibindo-informacoes {
+    margin: 16px 20px;
 }
 
-.modal__exibindo-informacoes-item{
-    padding-bottom: 16px;
-}
-
-.modal__exibindo-informacoes-item h3 {
+.modal__exibindo-informacoes-item h3{
     color: var(--branco);
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 1.5px;
 }
 
+.item-titulo {
+    margin-bottom: 16px;
+}
+
 .item-titulo p, .categorias-obra {
     background-color: var(--rosa-claro);
-    width: 100%;
-    margin-top: 8px;
-    border-radius: 3px;
-    padding: 10px;
-}
-
-.categorias-obra{
-    display: flex;
-    gap: 16px;
-}
-
-.categoria {
-    background-color: var(--rosa-queimado);
+    padding: 8px 10px;
     border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.categoria p {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.categoria p button {
-    height: 22px;
-    display: none;
-}
-
-.close{
-    position: absolute;
-    top: -1000px;
+    font-size: 17px;
+    margin: 8px 0;
 }
 
 /* MEDIA: */
-@media only screen and (min-width: 700px){
-    .principal__modal__exibindo {
-        width: 90%;
-        display: flex;
+@media only screen and (min-width: 500px) {
+    .principal__modal{
+        width: 75%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .principal__modal{
         flex-direction: row;
+        width: 80%;
     }
 
-    .modal__exibindo-fechar {
-        right: 24px;
-        top: 24px;
-    }
-
-    .modal__exibindo-img {
-        width: 60%;
-        margin-bottom: 0;
-    }
-
-    .modal__exibindo-informacoes{
-        padding: 24px 0 0 24px;
-        width: 90%;
-    }
-
-    .item-titulo h3 {
-        margin-top: 32px;
-    }
-
-    .item-categoria, .item-titulo{
-        width: 90%;
+    .modal__exibindo-informacoes {
+        width: 55%;
+        margin-top: 56px;
     }
 }
 
-@media only screen and (min-width: 845px){
-    .principal__modal__exibindo {
-        width: 70%;
+@media only screen and (min-width: 1100px) {
+    .principal__modal{
+        flex-direction: row;
+        width: 65%;
     }
 }
 
-@media only screen and (min-width: 1000px){
-    .principal__modal__exibindo {
-        width: 60%;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .principal__modal__exibindo {
-        width: 60%;
-    }
-}
-
-@media only screen and (min-width: 1400px){
-    .principal__modal__exibindo {
+@media only screen and (min-width: 1200px) {
+    .principal__modal{
+        flex-direction: row;
         width: 50%;
     }
 }
 
-@media only screen and (min-width: 1800){
-    .principal__modal__exibindo {
-        width: 50%;
+@media only screen and (min-width: 1700px) {
+    .principal__modal{
+        flex-direction: row;
+        width: 40%;
     }
 }
