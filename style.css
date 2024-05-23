@@ -31,10 +31,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
     height: 100vh;
-    width: 100%;
     background-color: var(--cor-background);
     font-family: var(--fonte);
     position: relative;
@@ -43,7 +40,6 @@ body{
 ::-webkit-scrollbar {
     background-color: var(--rosa-queimado);
     border-radius: 8px;
-    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -51,6 +47,6 @@ body{
     border-radius: 8px;
 }
 
-.close {
+.displayNone {
     display: none;
 }

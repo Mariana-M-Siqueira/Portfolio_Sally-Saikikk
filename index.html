@@ -24,8 +24,9 @@
 
         <nav class="cabecalho__nav">
 
-            <img src="img/menu-aberto.svg" alt="Menu Aberto" class="cabecalho__nav__icone" onclick="abrindoMenu()"
-                tabindex="0">
+            <button class="cabecalho__nav__icone" onclick="closedMenuMobile()">
+                <img src="img/menu-aberto.svg" alt="Menu Aberto" onclick="abrindoMenu()">
+            </button>
 
             <h3 class="cabecalho__nav__titulo">Menu:</h3>
 
@@ -48,7 +49,7 @@
             </ul>
 
             <div class="cabecalho__nav__btn-login">
-                <button class="cabecalho__nav__btn-entrar"><a href="html/login.html">Área do Artista</a></button>
+                <button class="cabecalho__nav__btn-entrar">Área do Artista</button>
                 <button class="cabecalho__nav__btn-sair">Sair</button>
             </div>
         </nav>
