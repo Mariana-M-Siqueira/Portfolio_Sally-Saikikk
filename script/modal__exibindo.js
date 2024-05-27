@@ -3,9 +3,7 @@ const imagens = document.querySelectorAll('.principal__galeria img');
 const fecharModal = document.querySelector('.modal-fechar');
 const areaImg = document.querySelector('.modal__exibindo-img');
 const areaTitulo = document.querySelector('.item-titulo p');
-const areaCategoria = document.querySelector('.categoria p');
-
-console.log(conteudoPag)
+const areaCategoria = document.querySelector('.categoria');
 
 modal.classList.add('displayNone');
 
@@ -18,12 +16,17 @@ imagens.forEach((imagem) => {
         modal.showModal();
         modal.classList.remove('displayNone');
         areaImg.setAttribute('src', `${imgSelecionada}`);
-
-        imgCategoria.forEach((categoria) => {
-            areaCategoria.textContent = categoria;
-        })
-
         areaTitulo.textContent = imgTitulo;
+
+        areaCategoria.innerHTML = "";
+        imgCategoria.forEach((categoria) => {
+            const categoriaEstilizado = categoria.charAt(0).toUpperCase() + categoria.slice(1);
+            
+            const tag = document.createElement('div');
+            tag.textContent = categoriaEstilizado;
+            tag.classList.add('categoria-tag');
+            areaCategoria.appendChild(tag);
+        })
     })
 })
 
