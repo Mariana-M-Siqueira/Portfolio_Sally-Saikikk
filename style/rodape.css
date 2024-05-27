@@ -39,8 +39,8 @@
 .rodape__contatos-email button {
     margin-top: 28px;
     background-color: var(--cor-background);
-    border-radius: 16px;
-    padding: .4em 1.3em .4em 1.3em;
+    border-radius: 8px;
+    padding: 8px 24px;
     font-weight: 300;
     margin-bottom: 40px;
     outline: none;
@@ -50,7 +50,7 @@
 
 .rodape__contatos-email button:hover,
 .rodape__contatos-email button:focus {
-    padding: .4em 2em .4em 2em;
+    padding: 8px 32px;
     background-color: var(--rosa-queimado);
     color: #000;
     font-weight: 400;
@@ -100,10 +100,7 @@
     font-weight: 250;
     outline: none;
     transition: 500ms;
-}
-
-.rodape__mapa-site ul li:hover, .rodape__mapa-site ul li:focus, .rodape__desenvolvedor a:hover, .rodape__desenvolvedor a:focus{
-    font-size: 18px;
+    position: relative;
 }
 
 .rodape__mapa-site ul li:not(:last-child) {
@@ -122,6 +119,26 @@
     cursor: pointer;
     font-weight: 500;
     transition: 500ms;
+    position: relative;
+}
+
+.rodape__desenvolvedor a::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-background);
+    bottom: -5px;
+    left: 0;
+    transition: 1s ease-in-out;
+}
+
+.rodape__desenvolvedor a:hover::after {
+    width: 100%;
+}
+
+.rodape__mapa-site ul li:hover, .rodape__mapa-site ul li:focus, .rodape__desenvolvedor a:hover, .rodape__desenvolvedor a:focus{
+    font-size: 18px;
 }
 
 /* MEDIA: */
