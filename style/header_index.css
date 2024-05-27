@@ -117,7 +117,6 @@
         margin-right: 0;
         background-color: transparent;
         display: flex;
-        align-items: center;
         gap: 20px;
         padding: 0;
         height: auto;
@@ -125,25 +124,17 @@
         position: relative;
     }
 
-    /* .cabecalho__nav__lista li {
-        margin-bottom: 16px;
-        background: url(../img/Bolinha.svg) no-repeat 5px;
-        padding-left: 20px;
-        color: var(--branco);
-        font-size: 18px;
-        font-weight: 300;
-        transition: 500ms;
-    } */
-
     .cabecalho__nav__lista {
         display: flex;
         white-space: nowrap;
+        align-items: center;
     }
 
     .cabecalho__nav__lista li {
         background: none;
         margin: 0;
         height: auto;
+        position: relative;
     }
 
     .cabecalho__nav__lista li:focus, .cabecalho__nav__lista li:hover {
@@ -186,4 +177,8 @@
         color: var(--branco);
         font-weight: 300;
     } 
+
+    .cabecalho__nav__lista li.nav-ativo {
+        padding: 8px 15px;
+    }
 }
