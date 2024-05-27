@@ -1,29 +1,31 @@
-// const modal = document.querySelector('.principal__modal');
-// const imagens = document.querySelectorAll('.principal__galeria img');
-// const fecharModal = document.querySelector('.modal-fechar');
-// const areaImg = document.querySelector('.modal__exibindo-img');
-// const areaTitulo = document.querySelector('.item-titulo p');
-// const areaCategoria = document.querySelector('.categoria p');
+const modal = document.querySelector('.principal__modal');
+const imagens = document.querySelectorAll('.principal__galeria img');
+const fecharModal = document.querySelector('.modal-fechar');
+const areaImg = document.querySelector('.modal__exibindo-img');
+const areaTitulo = document.querySelector('.item-titulo p');
+const areaCategoria = document.querySelector('.categoria p');
 
-// imagens.forEach((imagem) => {
-//     let imgSelecionada = imagem.src;
-//     let imgTitulo = imagem.title;
-//     let imgCategoria = imagem.classList;
+modal.classList.add('displayNone');
 
-//     imagem.addEventListener('click', () => {
-//         modal.showModal();
-//         modal.classList.remove('displayNone');
-//         areaImg.setAttribute('src',`${imgSelecionada}`);
+imagens.forEach((imagem) => {
+    let imgSelecionada = imagem.src;
+    let imgTitulo = imagem.title;
+    let imgCategoria = imagem.classList;
 
-//         imgCategoria.forEach((categoria) => {
-//             areaCategoria.textContent = categoria;
-//         })
+    imagem.addEventListener('click', () => {
+        modal.showModal();
+        modal.classList.remove('displayNone');
+        areaImg.setAttribute('src',`${imgSelecionada}`);
 
-//         areaTitulo.textContent = imgTitulo;
-//     })
-// })
+        imgCategoria.forEach((categoria) => {
+            areaCategoria.textContent = categoria;
+        })
 
-// fecharModal.addEventListener('click', () => {
-//     modal.close();
-//     modal.classList.add('displayNone');
-// })
+        areaTitulo.textContent = imgTitulo;
+    })
+})
+
+fecharModal.addEventListener('click', () => {
+    modal.close();
+    modal.classList.add('displayNone');
+})
