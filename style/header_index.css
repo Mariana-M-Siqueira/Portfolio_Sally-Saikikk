@@ -102,4 +102,82 @@
     .cabecalho {
         padding-bottom: 100px;
     }
+
+    .cabecalho__nav__btn, .cabecalho__nav__icone, .cabecalho__nav__titulo {
+        display: none;
+    }
+
+    .cabecalho__nav {
+        margin-right: 0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+
+    /* .cabecalho__nav__lista li {
+        margin-bottom: 16px;
+        background: url(../img/Bolinha.svg) no-repeat 5px;
+        padding-left: 20px;
+        color: var(--branco);
+        font-size: 18px;
+        font-weight: 300;
+        transition: 500ms;
+    } */
+
+    .cabecalho__nav__lista {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .cabecalho__nav__lista li {
+        background: none;
+        margin: 0;
+        height: auto;
+    }
+
+    .cabecalho__nav__lista li:focus, .cabecalho__nav__lista li:hover {
+        background-color: transparent;
+        padding: 0 0 0 20px;
+    }
+
+    .cabecalho__nav__lista li a {
+        position: relative;
+    }
+
+    .cabecalho__nav__lista li a::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: var(--rosa-queimado);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: 500ms ease-in-out;
+    }
+
+    .cabecalho__nav__lista li a:hover::after {
+        width: 105%;
+    }
+
+    .cabecalho__nav__btn-login {
+        top: 0;
+        width: auto;
+        right: 0;
+        font-size: 18px;
+    }
+
+    .cabecalho__nav__btn-entrar, .cabecalho__nav__btn-sair {
+        padding: 5px 15px;
+    }
+
+    .cabecalho__nav__btn-entrar:hover, .cabecalho__nav__btn-sair:hover, .cabecalho__nav__btn-entrar:focus, .cabecalho__nav__btn-sair:focus {
+        background-color: var(--rosa-escuro2);
+        color: var(--branco);
+        font-weight: 300;
+    } 
 }
