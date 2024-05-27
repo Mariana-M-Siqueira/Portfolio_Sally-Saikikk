@@ -93,6 +93,18 @@
     outline: none;
 }
 
+.principal__btn-topo {
+    background-color: var(--rosa-escuro2);
+    position: fixed;
+    right: 6%;
+    bottom: 5%;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
 /* MEDIA: */
 @media only screen and (min-width: 640px) {
     .principal__titulo {

@@ -1,19 +1,6 @@
-const scrollAnima = document.querySelector('[data-anima="scroll"]');
-const metadeWindow = window.innerHeight*5;
+window.addEventListener('scroll', () => {
+    let btnScroll = document.querySelector('.principal__btn-topo');
 
-function animarScroll(){
-    const topoItem = scrollAnima.getBoundingClientRect().top;
-    const itemVisivel = topoItem - metadeWindow<0;
-    
-    if(itemVisivel){
-        scrollAnima.classList.add('showBtnTopo');
-    }
-    else{
-        scrollAnima.classList.remove('showBtnTopo');
-    }
-}
-if(metadeWindow == 0){
-    animarScroll();
-}
+    btnScroll.classList.toggle('displayNone', window.scrollY < 550)
 
-window.addEventListener('scroll', animarScroll);
+})

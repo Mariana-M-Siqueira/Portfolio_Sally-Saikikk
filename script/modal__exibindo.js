@@ -5,6 +5,8 @@ const areaImg = document.querySelector('.modal__exibindo-img');
 const areaTitulo = document.querySelector('.item-titulo p');
 const areaCategoria = document.querySelector('.categoria p');
 
+console.log(conteudoPag)
+
 modal.classList.add('displayNone');
 
 imagens.forEach((imagem) => {
@@ -15,7 +17,7 @@ imagens.forEach((imagem) => {
     imagem.addEventListener('click', () => {
         modal.showModal();
         modal.classList.remove('displayNone');
-        areaImg.setAttribute('src',`${imgSelecionada}`);
+        areaImg.setAttribute('src', `${imgSelecionada}`);
 
         imgCategoria.forEach((categoria) => {
             areaCategoria.textContent = categoria;
@@ -29,3 +31,4 @@ fecharModal.addEventListener('click', () => {
     modal.close();
     modal.classList.add('displayNone');
 })
+
