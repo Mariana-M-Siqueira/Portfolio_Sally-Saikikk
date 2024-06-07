@@ -49,8 +49,8 @@
             </ul>
 
             <div class="cabecalho__nav__btn-login">
-                <button class="cabecalho__nav__btn-entrar">Área do Artista</button>
-                <button class="cabecalho__nav__btn-sair displayNone">Sair</button>
+                <button class="cabecalho__nav__btn-entrar ">Área do Artista</button>
+                <button class="cabecalho__nav__btn-sair ">Sair</button>
             </div>
         </nav>
 
@@ -70,7 +70,36 @@
             <span>Inserir Imagens</span>
         </button>
 
-        <!-- <dialog></dialog> -->
+        <!-- MODAL: INSERINDO NOVAS OBRAS - CONTA ARTISTA -->
+        <dialog class="principal__modal modal-inserindo">
+            <div class="modal__inserindo-container-img">
+                <button class="modal-fechar"><img src="img/fechar-modal.svg" alt=""></button>
+
+                <label tabindex="0" class="modal__picture-container">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" class="modal__picture-input displayNone">
+                    <span class="modal__picture-img">
+                    </span>
+                </label>
+            </div>
+
+            <div class="modal__exibindo-informacoes">
+                <div class="modal__exibindo-informacoes-item item-titulo">
+                    <h3>Título:</h3>
+                    <input type="text" placeholder="Insira o nome da obra" class="modal__input-titulo" required>
+                </div>
+
+                <div class="modal__exibindo-informacoes-item item-categoria">
+
+                    <h3>Categorias:</h3>
+
+                    <input type="text" class="modal__input-categoria" placeholder="Insira as categorias da obra" required>
+                </div>
+
+                <div class="modal__btn-inserir">
+                    <button>Inserir Obra</button>
+                </div>
+            </div>
+        </dialog>
 
         <!-- DROPDOWN CATEGORIAS -->
         <button class="principal__dropdown__container">
@@ -114,8 +143,8 @@
                 class="todos tradicional monstrosCriaturas">
         </div>
 
-        <!-- EXIBINDO CADA IMAGEM -->
-        <dialog class="principal__modal">
+        <!-- MODAL: EXIBINDO CADA IMAGEM -->
+        <dialog class="principal__modal modal-exibindo">
 
             <div class="modal__exibindo-container-img">
                 <button class="modal-fechar"><img src="img/fechar-modal.svg" alt=""></button>

@@ -1,11 +1,11 @@
-const modal = document.querySelector('.principal__modal');
+const modalExibindo = document.querySelector('.modal-exibindo');
 const imagens = document.querySelectorAll('.principal__galeria img');
-const fecharModal = document.querySelector('.modal-fechar');
+const fecharModal = document.querySelector('.modal__exibindo-container-img .modal-fechar');
 const areaImg = document.querySelector('.modal__exibindo-img');
 const areaTitulo = document.querySelector('.item-titulo p');
 const areaCategoria = document.querySelector('.categoria');
 
-modal.classList.add('displayNone');
+modalExibindo.classList.add('displayNone');
 
 imagens.forEach((imagem) => {
     let imgSelecionada = imagem.src;
@@ -13,8 +13,8 @@ imagens.forEach((imagem) => {
     let imgCategoria = imagem.classList;
 
     imagem.addEventListener('click', () => {
-        modal.showModal();
-        modal.classList.remove('displayNone');
+        modalExibindo.showModal();
+        modalExibindo.classList.remove('displayNone');
         areaImg.setAttribute('src', `${imgSelecionada}`);
         areaTitulo.textContent = imgTitulo;
 
@@ -31,7 +31,7 @@ imagens.forEach((imagem) => {
 })
 
 fecharModal.addEventListener('click', () => {
-    modal.close();
-    modal.classList.add('displayNone');
+    modalExibindo.close();
+    modalExibindo.classList.add('displayNone');
 })
 
