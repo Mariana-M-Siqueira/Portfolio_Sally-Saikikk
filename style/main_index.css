@@ -23,7 +23,7 @@
 }
 
 .principal__dropdown__container {
-    background: url(../img/dropdown-fechado.svg) no-repeat 95% 13px;
+    background: url(../img/dropdown-fechado.svg) no-repeat 95% 15px;
 }
 
 .principal__btn-inserir, .principal__dropdown__container {
@@ -37,7 +37,7 @@
 }
 
 .principal__btn-inserir:hover, .principal__btn-inserir:focus {
-    background: url(../img/mais2.svg) no-repeat 10px;
+    background: url(../img/mais2.svg) no-repeat 5% 10px;
     background-color: var(--rosa-queimado);
     outline: none;
 }
@@ -47,7 +47,6 @@
     font-size: 18px;
     font-weight: 250;
 }
-
 .dropdown-active {
     border-radius: 5px 5px 0 0;
     margin-bottom: 0;
